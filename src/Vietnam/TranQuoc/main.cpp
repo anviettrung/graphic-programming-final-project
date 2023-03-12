@@ -14,7 +14,7 @@
 
 #define VERTEX_SHADER_FILE "vertex_shader.vs"
 #define FRAGMENT_SHADER_FILE "fragment_shader.fs"
-#define MODEL_FILE "resources/TranQuoc4.obj"
+#define MODEL_FILE "resources/TranQuoc.obj"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -36,7 +36,7 @@ float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
 // lighting
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 sunDirect(-0.5f, 1, 0.5f);
 
 int main()
 {
@@ -119,9 +119,9 @@ int main()
 
         // be sure to activate shader when setting uniforms/drawing objects
         ourShader.use();
-        ourShader.setVec3("objectColor", 1.0f, 1.0f, 0.31f);
-        ourShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
-        ourShader.setVec3("lightPos", lightPos);
+        ourShader.setVec3("sunDirection", sunDirect);
+        ourShader.setFloat("sunIntensity", 1.0f);
+        ourShader.setVec3("skyColor", 0.5f, 0.7f, 0.9f);
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
