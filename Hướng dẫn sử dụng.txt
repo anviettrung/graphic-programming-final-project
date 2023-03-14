@@ -1,0 +1,23 @@
+# Hướng dẫn cài đặt
+
+B1: Download và Install CMake
+B2: Tạo thêm một thư mục trống tên "build"
+B3: Cài đặt trong CMake
+"Where is the source code" -> chọn đường dẫn đến thư mục vừa giải nén
+"Where to build the binaries" -> chọn đường dẫn đến thư mục "build" mới tạo ở trên
+B4: Bấm "Configure", chọn IDE bạn đang sử dụng và nhấn "Finish"
+B5: Bấm "Configure" lần nữa rồi bấm "Generate"
+B6: Giả sử IDE bạn chọn là Visual Studio, trong thư mục "build" sẽ chứa một file .sln. 
+Mở solution ra, ở tab "Solution Explore", chuột phải vào project "Vietnam__TranQuoc" chọn "Set as Startup Project"
+B7: Nhấn chạy chương trình (F5)
+
+# Hướng dẫn sử dụng
+- Di chuyển chuột: Quay camera
+- W/A/S/D: di chuyển camera theo các hướng tiến, trái, lùi, phải trong không gian
+
+# Phụ lục
+Các file tài nguyên được chứa trong thư mục resources gồm có một số file/folder quan trọng:
+Screenshot: Chứa các ảnh minh họa
+TranQuoc.blend: File edit model trong phần mềm Blender
+TranQuoc.obj: File model được sử dụng
+TranQuoc.mtl + Texture.png: Các file bổ trợ màu sắc cho model
