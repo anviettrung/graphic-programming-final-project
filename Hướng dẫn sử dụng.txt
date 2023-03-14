@@ -10,6 +10,7 @@ B5: Bấm "Configure" lần nữa rồi bấm "Generate"
 B6: Giả sử IDE bạn chọn là Visual Studio, trong thư mục "build" sẽ chứa một file .sln. 
 Mở solution ra, ở tab "Solution Explore", chuột phải vào project "Vietnam__TranQuoc" chọn "Set as Startup Project"
 B7: Nhấn chạy chương trình (F5)
+*Lưu ý: Nếu chạy mà thấy màn hình trắng (đen) thì đừng tắt vội vì model đang load
 
 # Hướng dẫn sử dụng
 - Di chuyển chuột: Quay camera
